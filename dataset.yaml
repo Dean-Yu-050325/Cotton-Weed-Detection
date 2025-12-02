@@ -1,0 +1,46 @@
+# Cotton Weed Detection Dataset
+# YOLOv8 Dataset Configuration
+
+# Dataset paths (relative to this file)
+path: .  # Root directory
+train: train/images  # Training images
+val: val/images      # Validation images
+test: test/images    # Test images (optional)
+
+# Number of classes
+nc: 3
+
+# Class names
+names:
+  0: carpetweed
+  1: morningglory
+  2: palmer_amaranth
+
+# Dataset Information
+# ------------------
+# Dataset: CottonWeedDet3 - Cotton Weed Detection Challenge
+# Purpose: Real-world agricultural weed detection with imperfect labels
+# Format: YOLOv8 (YOLO format with normalized bounding boxes)
+# 
+# Dataset Statistics:
+#   - Training images: 542
+#   - Validation images: 133
+#   - Test images: 170
+#   - Total images: 845
+#
+# Classes:
+#   - Class 0 (carpetweed): Mat-forming competitor weed
+#   - Class 1 (morningglory): Climbing vine causing major yield losses
+#   - Class 2 (palmer_amaranth): Herbicide-resistant "super weed"
+#
+# Label Format:
+#   - Each .txt file contains one line per object
+#   - Format: <class_id> <x_center> <y_center> <width> <height>
+#   - All coordinates are normalized (0-1)
+#
+# Notes:
+#   - This dataset intentionally includes labeling imperfections to simulate
+#     real-world annotation challenges
+#   - Recommended approach: Use data-centric AI techniques to iteratively
+#     improve label quality through train-fix-retrain loops
+#   - Optimized for YOLOv8n with 640x640 input size for edge deployment

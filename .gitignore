@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+cottonweeddetect/
+venv/
+env/
+ENV/
+.venv
+
+# Dataset directories (exclude from git)
+train/
+val/
+test/
+
+# Model weights (too large for git)
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Training results
+runs/
+wandb/
+mlruns/
+
+# Visualization samples
+visualized_samples/
+
+# Submission files
+submission.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
