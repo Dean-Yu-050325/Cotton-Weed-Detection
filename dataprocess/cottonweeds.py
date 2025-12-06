@@ -54,7 +54,7 @@ def split_dataset_json(root_dir, output_dir, train_ratio=0.7):
 
 # ----------- 在这里设置你的路径（桌面路径） -----------
 split_dataset_json(
-    r"C:/Users/宣佳琦/Desktop/CottonWeeds",
-    r"C:/Users/宣佳琦/Desktop/CottonWeeds_split",
+    r"C:\Users\shish\Desktop\cottonweed",
+    r"C:\Users\shish\Desktop\cottonweed_split",
     train_ratio=0.7
 )
